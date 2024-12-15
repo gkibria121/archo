@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-      {/* <script src="js/jquery.js"></script>
+      <script src="js/jquery.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
       <script src="js/tilt.jquery.min.js"></script>
       <script src="js/jquery.paroller.min.js"></script>
       <script src="js/jquery-ui.js"></script>
-      <script src="js/script.js"></script> */}
+      {/* <script src="js/script.js"></script> */}
       </body>
     </html>
   );

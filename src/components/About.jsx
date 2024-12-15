@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from './Header'
 
 const About = () => {
   return (
@@ -41,118 +42,7 @@ const About = () => {
     */}
   <div className="page-wrapper">
     {/* Main Header*/}
-    <header className="main-header">
-      {/* Header Upper */}
-      <div className="header-upper">
-        <div className="outer-container">
-          <div className="inner-container clearfix">
-            <div className="pull-left logo-box">
-              <div className="logo">
-                <a href="index.html">
-                  <img src="images/logo.png" alt="" title="" />
-                </a>
-              </div>
-            </div>
-            <div className="nav-outer pull-left clearfix">
-              {/* Mobile Navigation Toggler */}
-              <div className="mobile-nav-toggler">
-                <span className="icon ti-menu" />
-              </div>
-              {/* Main Menu */}
-              <nav className="main-menu navbar-expand-md">
-                <div className="navbar-header">
-                  <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span className="icon-bar" />
-                    <span className="icon-bar" />
-                    <span className="icon-bar" />
-                  </button>
-                </div>
-                <div
-                  className="navbar-collapse show collapse clearfix"
-                  id="navbarSupportedContent"
-                >
-                  <ul className="navigation clearfix">
-                    <li>
-                      <a href="index.html">Home</a>
-                    </li>
-                    <li className="current">
-                      <a href="about.html">About</a>
-                    </li>
-                    <li className="dropdown">
-                      <a href="#">Projects</a>
-                      <ul>
-                        <li>
-                          <a href="projects.html">Projects</a>
-                        </li>
-                        <li>
-                          <a href="projects-detail.html">Projects Detail</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="dropdown">
-                      <a href="#">Blog</a>
-                      <ul>
-                        <li>
-                          <a href="blog.html">Our Blog</a>
-                        </li>
-                        <li>
-                          <a href="blog-detail.html">Blog Detail</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-            {/* Outer Box */}
-            <div className="outer-box clearfix">
-              <ul className="language-list">
-                <li>
-                  <a href="#">End</a>
-                </li>
-                <li>
-                  <a href="#">Fra</a>
-                </li>
-              </ul>
-              {/* Mobile Navigation Toggler */}
-              <div className="mobile-nav-toggler">
-                menu <span className="icon ion-android-menu" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/*End Header Upper*/}
-      {/* Mobile Menu  */}
-      <div className="mobile-menu">
-        <div className="menu-backdrop" />
-        <div className="close-btn">
-          <span className="icon lnr lnr-cross" />
-        </div>
-        <nav className="menu-box">
-          <div className="nav-logo">
-            <a href="index.html">
-              <img src="images/logo-2.png" alt="" title="" />
-            </a>
-          </div>
-          <div className="menu-outer">
-            {/*Here Menu Will Come Automatically Via Javascript / Same Menu as in Header*/}
-          </div>
-        </nav>
-      </div>
-      {/* End Mobile Menu */}
-    </header>
+    <Header />
     {/*End Main Header */}
     {/* Page Banner Section */}
     <section
