@@ -50,7 +50,7 @@ const Project = () => {
         <h2>Our Works</h2>
         <ul className="post-meta">
           <li>
-            <a href="index.html">Home</a>
+            <a href="index">Home</a>
           </li>
           <li>Works</li>
         </ul>
@@ -103,14 +103,14 @@ const Project = () => {
             <div className="gallery-block-two all masonry-item interior architecture col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <div className="image">
-                  <a href="projects-detail.html">
+                  <a href="projects-detail">
                     <img src="images/gallery/5.jpg" alt="" />
                   </a>
                 </div>
                 <div className="lower-content">
                   <div className="designation">Residentials</div>
                   <h4>
-                    <a href="projects-detail.html">Dustin Villa, Spain</a>
+                    <a href="projects-detail">Dustin Villa, Spain</a>
                   </h4>
                 </div>
               </div>
@@ -119,14 +119,14 @@ const Project = () => {
             <div className="gallery-block-two all masonry-item architecture col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <div className="image">
-                  <a href="projects-detail.html">
+                  <a href="projects-detail">
                     <img src="images/gallery/6.jpg" alt="" />
                   </a>
                 </div>
                 <div className="lower-content">
                   <div className="designation">Commercial</div>
                   <h4>
-                    <a href="projects-detail.html">ABC Financial Bank</a>
+                    <a href="projects-detail">ABC Financial Bank</a>
                   </h4>
                 </div>
               </div>
@@ -135,14 +135,14 @@ const Project = () => {
             <div className="gallery-block-two all masonry-item interior col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <div className="image">
-                  <a href="projects-detail.html">
+                  <a href="projects-detail">
                     <img src="images/gallery/7.jpg" alt="" />
                   </a>
                 </div>
                 <div className="lower-content">
                   <div className="designation">Residentials</div>
                   <h4>
-                    <a href="projects-detail.html">Cubic Villa</a>
+                    <a href="projects-detail">Cubic Villa</a>
                   </h4>
                 </div>
               </div>
@@ -151,14 +151,14 @@ const Project = () => {
             <div className="gallery-block-two all masonry-item residentials architecture col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <div className="image">
-                  <a href="projects-detail.html">
+                  <a href="projects-detail">
                     <img src="images/gallery/9.jpg" alt="" />
                   </a>
                 </div>
                 <div className="lower-content">
                   <div className="designation">Interior</div>
                   <h4>
-                    <a href="projects-detail.html">
+                    <a href="projects-detail">
                       Minimal Interior - A5, Italy
                     </a>
                   </h4>
@@ -169,14 +169,14 @@ const Project = () => {
             <div className="gallery-block-two all masonry-item architecture col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <div className="image">
-                  <a href="projects-detail.html">
+                  <a href="projects-detail">
                     <img src="images/gallery/8.jpg" alt="" />
                   </a>
                 </div>
                 <div className="lower-content">
                   <div className="designation">Architecture</div>
                   <h4>
-                    <a href="projects-detail.html">Culture House</a>
+                    <a href="projects-detail">Culture House</a>
                   </h4>
                 </div>
               </div>
@@ -185,14 +185,14 @@ const Project = () => {
             <div className="gallery-block-two all masonry-item interior commercials col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <div className="image">
-                  <a href="projects-detail.html">
+                  <a href="projects-detail">
                     <img src="images/gallery/10.jpg" alt="" />
                   </a>
                 </div>
                 <div className="lower-content">
                   <div className="designation">Interior</div>
                   <h4>
-                    <a href="projects-detail.html">B6-No.5 OLA Tower</a>
+                    <a href="projects-detail">B6-No.5 OLA Tower</a>
                   </h4>
                 </div>
               </div>
@@ -201,14 +201,14 @@ const Project = () => {
             <div className="gallery-block-two all masonry-item architecture residentials col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <div className="image">
-                  <a href="projects-detail.html">
+                  <a href="projects-detail">
                     <img src="images/gallery/11.jpg" alt="" />
                   </a>
                 </div>
                 <div className="lower-content">
                   <div className="designation">Architecture</div>
                   <h4>
-                    <a href="projects-detail.html">OSHO Retreat Homestay</a>
+                    <a href="projects-detail">OSHO Retreat Homestay</a>
                   </h4>
                 </div>
               </div>
@@ -217,14 +217,14 @@ const Project = () => {
             <div className="gallery-block-two all masonry-item residentials commercials col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <div className="image">
-                  <a href="projects-detail.html">
+                  <a href="projects-detail">
                     <img src="images/gallery/13.jpg" alt="" />
                   </a>
                 </div>
                 <div className="lower-content">
                   <div className="designation">Residentials</div>
                   <h4>
-                    <a href="projects-detail.html">Davia Villa, Ukraine</a>
+                    <a href="projects-detail">Davia Villa, Ukraine</a>
                   </h4>
                 </div>
               </div>
@@ -233,14 +233,14 @@ const Project = () => {
             <div className="gallery-block-two all masonry-item residentials interior col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <div className="image">
-                  <a href="projects-detail.html">
+                  <a href="projects-detail">
                     <img src="images/gallery/12.jpg" alt="" />
                   </a>
                 </div>
                 <div className="lower-content">
                   <div className="designation">Commercial</div>
                   <h4>
-                    <a href="projects-detail.html">
+                    <a href="projects-detail">
                       Liberty University, Poland
                     </a>
                   </h4>
@@ -260,7 +260,7 @@ const Project = () => {
     <footer className="main-footer">
       <div className="auto-container">
         <div className="logo">
-          <a href="index.html">
+          <a href="index">
             <img src="images/logo-3.png" alt="" />
           </a>
         </div>

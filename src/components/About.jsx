@@ -98,7 +98,7 @@ const About = () => {
                     <div className="content">
                       <div className="icon icofont-building-alt" />
                       <h5>
-                        <a href="projects-detail.html">
+                        <a href="projects-detail">
                           Architectural Building
                         </a>
                       </h5>
@@ -115,7 +115,7 @@ const About = () => {
                     <div className="content">
                       <div className="icon icofont-livejournal" />
                       <h5>
-                        <a href="projects-detail.html">Interior Design</a>
+                        <a href="projects-detail">Interior Design</a>
                       </h5>
                       <p>
                         Meaningful preconstruction services bring value,
@@ -131,7 +131,7 @@ const About = () => {
                     <div className="content">
                       <div className="icon icofont-toy-horse" />
                       <h5>
-                        <a href="projects-detail.html">Furnitures Production</a>
+                        <a href="projects-detail">Furnitures Production</a>
                       </h5>
                       <p>
                         We developed strong relationships with contractors and
@@ -312,13 +312,13 @@ const About = () => {
             <div className="service-block col-lg-3 col-md-6 col-sm-12">
               <div className="inner-box">
                 <h5>
-                  <a href="projects-detail.html">
+                  <a href="projects-detail">
                     profressional and dedicate team
                   </a>
                 </h5>
                 <p>Building architectures with modern technology.</p>
                 <div className="icon icofont-labour" />
-                <a href="projects-detail.html" className="more">
+                <a href="projects-detail" className="more">
                   more
                 </a>
               </div>
@@ -327,11 +327,11 @@ const About = () => {
             <div className="service-block col-lg-3 col-md-6 col-sm-12">
               <div className="inner-box">
                 <h5>
-                  <a href="projects-detail.html">unique design</a>
+                  <a href="projects-detail">unique design</a>
                 </h5>
                 <p>Bring the beautifully for your house. Just enjoy!</p>
                 <div className="icon icofont-ruler-compass-alt" />
-                <a href="projects-detail.html" className="more">
+                <a href="projects-detail" className="more">
                   more
                 </a>
               </div>
@@ -340,11 +340,11 @@ const About = () => {
             <div className="service-block col-lg-3 col-md-6 col-sm-12">
               <div className="inner-box">
                 <h5>
-                  <a href="projects-detail.html">affordable and flexiable</a>
+                  <a href="projects-detail">affordable and flexiable</a>
                 </h5>
                 <p>Bring nature in your house. Health is important</p>
                 <div className="icon icofont-credit-card" />
-                <a href="projects-detail.html" className="more">
+                <a href="projects-detail" className="more">
                   more
                 </a>
               </div>
@@ -353,11 +353,11 @@ const About = () => {
             <div className="service-block col-lg-3 col-md-6 col-sm-12">
               <div className="inner-box">
                 <h5>
-                  <a href="projects-detail.html">24/7 support</a>
+                  <a href="projects-detail">24/7 support</a>
                 </h5>
                 <p>Consulting solutions and make plan to renovation</p>
                 <div className="icon icofont-live-support" />
-                <a href="projects-detail.html" className="more">
+                <a href="projects-detail" className="more">
                   more
                 </a>
               </div>
@@ -537,7 +537,7 @@ const About = () => {
     <footer className="main-footer">
       <div className="auto-container">
         <div className="logo">
-          <a href="index.html">
+          <a href="index">
             <img src="images/logo-3.png" alt="" />
           </a>
         </div>

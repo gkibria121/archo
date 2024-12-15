@@ -18,18 +18,6 @@ const Home = () => {
   <link href="/css/bootstrap.css" rel="stylesheet" />
   <link href="/css/main.css" rel="stylesheet" />
   <link href="/css/responsive.css" rel="stylesheet" />
-  {/* Open Graph (OG) meta tags are snippets of code that control how URLs are displayed when shared on social media
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Archo - Bootstrap HTML Template" />
-    <meta property="og:url" content="PAGE_URL" />
-    <meta property="og:site_name" content="SITE_NAME" />
-    */}
-  {/* For the og:image content, replace the # with a link of an image
-    <meta property="og:image" content="#" />
-    <meta property="og:description" content="Archo is a free Bootstrap HTML Template" />
-    */}
-  {/* Fonts */}
   <link
     href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Teko:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
@@ -69,7 +57,7 @@ const Home = () => {
                   <br /> help owner really enjoy his life beside the beach
                 </p>
                 <div className="btn-box">
-                  <a href="about.html" className="see-projects">
+                  <a href="about" className="see-projects">
                     See project
                   </a>
                 </div>
@@ -98,7 +86,7 @@ const Home = () => {
                   <br /> help owner really enjoy his life beside the beach
                 </p>
                 <div className="btn-box">
-                  <a href="about.html" className="see-projects">
+                  <a href="about" className="see-projects">
                     See project
                   </a>
                 </div>
@@ -127,7 +115,7 @@ const Home = () => {
                   <br /> help owner really enjoy his life beside the beach
                 </p>
                 <div className="btn-box">
-                  <a href="about.html" className="see-projects">
+                  <a href="about" className="see-projects">
                     See project
                   </a>
                 </div>
@@ -208,7 +196,7 @@ const Home = () => {
                     <div className="content">
                       <div className="icon icofont-building-alt" />
                       <h5>
-                        <a href="projects-detail.html">
+                        <a href="projects-detail">
                           Architectural Building
                         </a>
                       </h5>
@@ -225,7 +213,7 @@ const Home = () => {
                     <div className="content">
                       <div className="icon icofont-livejournal" />
                       <h5>
-                        <a href="projects-detail.html">Interior Design</a>
+                        <a href="projects-detail">Interior Design</a>
                       </h5>
                       <p>
                         Meaningful preconstruction services bring value,
@@ -241,7 +229,7 @@ const Home = () => {
                     <div className="content">
                       <div className="icon icofont-toy-horse" />
                       <h5>
-                        <a href="projects-detail.html">Furnitures Production</a>
+                        <a href="projects-detail">Furnitures Production</a>
                       </h5>
                       <p>
                         We developed strong relationships with contractors and
@@ -289,7 +277,7 @@ const Home = () => {
                   </ul>
                 </div>
                 <div className="pull-right">
-                  <a href="projects.html" className="projects">
+                  <a href="projects" className="projects">
                     see all projects{" "}
                     <span className="arrow icofont-rounded-right" />
                   </a>
@@ -312,7 +300,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Residential</div>
                         <h2>
-                          <a href="projects-detail.html">Cubic Villa</a>
+                          <a href="projects-detail">Cubic Villa</a>
                         </h2>
                       </div>
                     </div>
@@ -328,7 +316,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Architecture</div>
                         <h2>
-                          <a href="projects-detail.html">Culture House</a>
+                          <a href="projects-detail">Culture House</a>
                         </h2>
                       </div>
                     </div>
@@ -344,7 +332,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Commercial</div>
                         <h2>
-                          <a href="projects-detail.html">ABC Financial Bank</a>
+                          <a href="projects-detail">ABC Financial Bank</a>
                         </h2>
                       </div>
                     </div>
@@ -360,7 +348,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Interior</div>
                         <h2>
-                          <a href="projects-detail.html">B6-No.5 OLA Tower</a>
+                          <a href="projects-detail">B6-No.5 OLA Tower</a>
                         </h2>
                       </div>
                     </div>
@@ -376,7 +364,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Residential</div>
                         <h2>
-                          <a href="projects-detail.html">Cubic Villa</a>
+                          <a href="projects-detail">Cubic Villa</a>
                         </h2>
                       </div>
                     </div>
@@ -392,7 +380,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Architecture</div>
                         <h2>
-                          <a href="projects-detail.html">Culture House</a>
+                          <a href="projects-detail">Culture House</a>
                         </h2>
                       </div>
                     </div>
@@ -408,7 +396,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Commercial</div>
                         <h2>
-                          <a href="projects-detail.html">ABC Financial Bank</a>
+                          <a href="projects-detail">ABC Financial Bank</a>
                         </h2>
                       </div>
                     </div>
@@ -424,7 +412,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Interior</div>
                         <h2>
-                          <a href="projects-detail.html">B6-No.5 OLA Tower</a>
+                          <a href="projects-detail">B6-No.5 OLA Tower</a>
                         </h2>
                       </div>
                     </div>
@@ -445,7 +433,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Residential</div>
                         <h2>
-                          <a href="projects-detail.html">Cubic Villa</a>
+                          <a href="projects-detail">Cubic Villa</a>
                         </h2>
                       </div>
                     </div>
@@ -461,7 +449,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Commercial</div>
                         <h2>
-                          <a href="projects-detail.html">ABC Financial Bank</a>
+                          <a href="projects-detail">ABC Financial Bank</a>
                         </h2>
                       </div>
                     </div>
@@ -477,7 +465,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Architecture</div>
                         <h2>
-                          <a href="projects-detail.html">Culture House</a>
+                          <a href="projects-detail">Culture House</a>
                         </h2>
                       </div>
                     </div>
@@ -493,7 +481,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Interior</div>
                         <h2>
-                          <a href="projects-detail.html">B6-No.5 OLA Tower</a>
+                          <a href="projects-detail">B6-No.5 OLA Tower</a>
                         </h2>
                       </div>
                     </div>
@@ -509,7 +497,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Residential</div>
                         <h2>
-                          <a href="projects-detail.html">Cubic Villa</a>
+                          <a href="projects-detail">Cubic Villa</a>
                         </h2>
                       </div>
                     </div>
@@ -525,7 +513,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Commercial</div>
                         <h2>
-                          <a href="projects-detail.html">ABC Financial Bank</a>
+                          <a href="projects-detail">ABC Financial Bank</a>
                         </h2>
                       </div>
                     </div>
@@ -541,7 +529,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Architecture</div>
                         <h2>
-                          <a href="projects-detail.html">Culture House</a>
+                          <a href="projects-detail">Culture House</a>
                         </h2>
                       </div>
                     </div>
@@ -557,7 +545,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Interior</div>
                         <h2>
-                          <a href="projects-detail.html">B6-No.5 OLA Tower</a>
+                          <a href="projects-detail">B6-No.5 OLA Tower</a>
                         </h2>
                       </div>
                     </div>
@@ -578,7 +566,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Residential</div>
                         <h2>
-                          <a href="projects-detail.html">Cubic Villa</a>
+                          <a href="projects-detail">Cubic Villa</a>
                         </h2>
                       </div>
                     </div>
@@ -594,7 +582,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Architecture</div>
                         <h2>
-                          <a href="projects-detail.html">Culture House</a>
+                          <a href="projects-detail">Culture House</a>
                         </h2>
                       </div>
                     </div>
@@ -610,7 +598,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Commercial</div>
                         <h2>
-                          <a href="projects-detail.html">ABC Financial Bank</a>
+                          <a href="projects-detail">ABC Financial Bank</a>
                         </h2>
                       </div>
                     </div>
@@ -626,7 +614,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Interior</div>
                         <h2>
-                          <a href="projects-detail.html">B6-No.5 OLA Tower</a>
+                          <a href="projects-detail">B6-No.5 OLA Tower</a>
                         </h2>
                       </div>
                     </div>
@@ -642,7 +630,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Residential</div>
                         <h2>
-                          <a href="projects-detail.html">Cubic Villa</a>
+                          <a href="projects-detail">Cubic Villa</a>
                         </h2>
                       </div>
                     </div>
@@ -658,7 +646,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Architecture</div>
                         <h2>
-                          <a href="projects-detail.html">Culture House</a>
+                          <a href="projects-detail">Culture House</a>
                         </h2>
                       </div>
                     </div>
@@ -674,7 +662,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Commercial</div>
                         <h2>
-                          <a href="projects-detail.html">ABC Financial Bank</a>
+                          <a href="projects-detail">ABC Financial Bank</a>
                         </h2>
                       </div>
                     </div>
@@ -690,7 +678,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Interior</div>
                         <h2>
-                          <a href="projects-detail.html">B6-No.5 OLA Tower</a>
+                          <a href="projects-detail">B6-No.5 OLA Tower</a>
                         </h2>
                       </div>
                     </div>
@@ -711,7 +699,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Residential</div>
                         <h2>
-                          <a href="projects-detail.html">Cubic Villa</a>
+                          <a href="projects-detail">Cubic Villa</a>
                         </h2>
                       </div>
                     </div>
@@ -727,7 +715,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Commercial</div>
                         <h2>
-                          <a href="projects-detail.html">ABC Financial Bank</a>
+                          <a href="projects-detail">ABC Financial Bank</a>
                         </h2>
                       </div>
                     </div>
@@ -743,7 +731,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Architecture</div>
                         <h2>
-                          <a href="projects-detail.html">Culture House</a>
+                          <a href="projects-detail">Culture House</a>
                         </h2>
                       </div>
                     </div>
@@ -759,7 +747,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Interior</div>
                         <h2>
-                          <a href="projects-detail.html">B6-No.5 OLA Tower</a>
+                          <a href="projects-detail">B6-No.5 OLA Tower</a>
                         </h2>
                       </div>
                     </div>
@@ -775,7 +763,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Residential</div>
                         <h2>
-                          <a href="projects-detail.html">Cubic Villa</a>
+                          <a href="projects-detail">Cubic Villa</a>
                         </h2>
                       </div>
                     </div>
@@ -791,7 +779,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Commercial</div>
                         <h2>
-                          <a href="projects-detail.html">ABC Financial Bank</a>
+                          <a href="projects-detail">ABC Financial Bank</a>
                         </h2>
                       </div>
                     </div>
@@ -807,7 +795,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Architecture</div>
                         <h2>
-                          <a href="projects-detail.html">Culture House</a>
+                          <a href="projects-detail">Culture House</a>
                         </h2>
                       </div>
                     </div>
@@ -823,7 +811,7 @@ const Home = () => {
                       <div className="content">
                         <div className="category">Interior</div>
                         <h2>
-                          <a href="projects-detail.html">B6-No.5 OLA Tower</a>
+                          <a href="projects-detail">B6-No.5 OLA Tower</a>
                         </h2>
                       </div>
                     </div>
@@ -848,13 +836,13 @@ const Home = () => {
             <div className="service-block col-lg-3 col-md-6 col-sm-12">
               <div className="inner-box">
                 <h5>
-                  <a href="projects-detail.html">
+                  <a href="projects-detail">
                     profressional and dedicate team
                   </a>
                 </h5>
                 <p>Building architectures with modern technology.</p>
                 <div className="icon icofont-labour" />
-                <a href="projects-detail.html" className="more">
+                <a href="projects-detail" className="more">
                   more
                 </a>
               </div>
@@ -863,11 +851,11 @@ const Home = () => {
             <div className="service-block col-lg-3 col-md-6 col-sm-12">
               <div className="inner-box">
                 <h5>
-                  <a href="projects-detail.html">unique design</a>
+                  <a href="projects-detail">unique design</a>
                 </h5>
                 <p>Bring the beautifully for your house. Just enjoy!</p>
                 <div className="icon icofont-ruler-compass-alt" />
-                <a href="projects-detail.html" className="more">
+                <a href="projects-detail" className="more">
                   more
                 </a>
               </div>
@@ -876,11 +864,11 @@ const Home = () => {
             <div className="service-block col-lg-3 col-md-6 col-sm-12">
               <div className="inner-box">
                 <h5>
-                  <a href="projects-detail.html">affordable and flexiable</a>
+                  <a href="projects-detail">affordable and flexiable</a>
                 </h5>
                 <p>Bring nature in your house. Health is important</p>
                 <div className="icon icofont-credit-card" />
-                <a href="projects-detail.html" className="more">
+                <a href="projects-detail" className="more">
                   more
                 </a>
               </div>
@@ -889,11 +877,11 @@ const Home = () => {
             <div className="service-block col-lg-3 col-md-6 col-sm-12">
               <div className="inner-box">
                 <h5>
-                  <a href="projects-detail.html">24/7 support</a>
+                  <a href="projects-detail">24/7 support</a>
                 </h5>
                 <p>Consulting solutions and make plan to renovation</p>
                 <div className="icon icofont-live-support" />
-                <a href="projects-detail.html" className="more">
+                <a href="projects-detail" className="more">
                   more
                 </a>
               </div>
@@ -1180,7 +1168,7 @@ const Home = () => {
           <div className="news-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
             <div className="inner-box">
               <div className="image">
-                <a href="blog-detail.html">
+                <a href="blog-detail">
                   <img src="images/resource/news-1.jpg" alt="" />
                 </a>
               </div>
@@ -1190,7 +1178,7 @@ const Home = () => {
                   <li>news</li>
                 </ul>
                 <h4>
-                  <a href="blog-detail.html">The Way Of Building</a>
+                  <a href="blog-detail">The Way Of Building</a>
                 </h4>
               </div>
             </div>
@@ -1199,7 +1187,7 @@ const Home = () => {
           <div className="news-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
             <div className="inner-box">
               <div className="image">
-                <a href="blog-detail.html">
+                <a href="blog-detail">
                   <img src="images/resource/news-2.jpg" alt="" />
                 </a>
               </div>
@@ -1209,7 +1197,7 @@ const Home = () => {
                   <li>inspiration</li>
                 </ul>
                 <h4>
-                  <a href="blog-detail.html">
+                  <a href="blog-detail">
                     The Arch In Modern Architecture, Art &amp; Aesthetic More
                   </a>
                 </h4>
@@ -1220,7 +1208,7 @@ const Home = () => {
           <div className="news-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
             <div className="inner-box">
               <div className="image">
-                <a href="blog-detail.html">
+                <a href="blog-detail">
                   <img src="images/resource/news-3.jpg" alt="" />
                 </a>
               </div>
@@ -1230,7 +1218,7 @@ const Home = () => {
                   <li>tips &amp; tricks</li>
                 </ul>
                 <h4>
-                  <a href="blog-detail.html">
+                  <a href="blog-detail">
                     Spiral Stair, New Interior Design Trends 2020
                   </a>
                 </h4>
@@ -1241,7 +1229,7 @@ const Home = () => {
           <div className="news-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
             <div className="inner-box">
               <div className="image">
-                <a href="blog-detail.html">
+                <a href="blog-detail">
                   <img src="images/resource/news-4.jpg" alt="" />
                 </a>
               </div>
@@ -1251,7 +1239,7 @@ const Home = () => {
                   <li>others</li>
                 </ul>
                 <h4>
-                  <a href="blog-detail.html">Nordic Interior Style</a>
+                  <a href="blog-detail">Nordic Interior Style</a>
                 </h4>
               </div>
             </div>
@@ -1264,7 +1252,7 @@ const Home = () => {
     <footer className="main-footer">
       <div className="auto-container">
         <div className="logo">
-          <a href="index.html">
+          <a href="index">
             <img src="images/logo-3.png" alt="" />
           </a>
         </div>

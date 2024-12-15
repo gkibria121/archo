@@ -22,7 +22,7 @@ function Header() {
   }, []);
   useEffect(() => {
     // Update the header theme based on the pathname
-    console.log(pathname)
+ 
     if (pathname === '/projects' || pathname ==="/contact") {
       setHeaderTheme('light');
      

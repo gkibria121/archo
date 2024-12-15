@@ -50,7 +50,7 @@ const Blog = () => {
         <h2>Our Blog</h2>
         <ul className="post-meta">
           <li>
-            <a href="index.html">Home</a>
+            <a href="index">Home</a>
           </li>
           <li>Blog</li>
         </ul>
@@ -113,7 +113,7 @@ const Blog = () => {
                         }}
                       />
                       <div className="image">
-                        <a href="blog-detail.html">
+                        <a href="blog-detail">
                           <img src="images/resource/news-5.jpg" alt="" />
                         </a>
                       </div>
@@ -127,7 +127,7 @@ const Blog = () => {
                         <li>news</li>
                       </ul>
                       <h4>
-                        <a href="blog-detail.html">The Way Of Building</a>
+                        <a href="blog-detail">The Way Of Building</a>
                       </h4>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -135,7 +135,7 @@ const Blog = () => {
                         nec accumsan nibh, eu grav da metus. Curabitur quis
                         sagittis nisl. In lectus ligula, varius quis...
                       </p>
-                      <a href="blog-detail.html" className="article">
+                      <a href="blog-detail" className="article">
                         full article{" "}
                         <span className="arrow icofont-rounded-right" />
                       </a>
@@ -158,7 +158,7 @@ const Blog = () => {
                         }}
                       />
                       <div className="image">
-                        <a href="blog-detail.html">
+                        <a href="blog-detail">
                           <img src="images/resource/news-6.jpg" alt="" />
                         </a>
                       </div>
@@ -172,7 +172,7 @@ const Blog = () => {
                         <li>inspiration</li>
                       </ul>
                       <h4>
-                        <a href="blog-detail.html">
+                        <a href="blog-detail">
                           The Arch In Modern Architecture, Art and Aesthetic
                           More
                         </a>
@@ -183,7 +183,7 @@ const Blog = () => {
                         nec accumsan nibh, eu grav da metus. Curabitur quis
                         sagittis nisl. In lectus ligula, varius quis...
                       </p>
-                      <a href="blog-detail.html" className="article">
+                      <a href="blog-detail" className="article">
                         full article{" "}
                         <span className="arrow icofont-rounded-right" />
                       </a>
@@ -206,7 +206,7 @@ const Blog = () => {
                         }}
                       />
                       <div className="image">
-                        <a href="blog-detail.html">
+                        <a href="blog-detail">
                           <img src="images/resource/news-7.jpg" alt="" />
                         </a>
                       </div>
@@ -220,7 +220,7 @@ const Blog = () => {
                         <li>tips &amp; tricks</li>
                       </ul>
                       <h4>
-                        <a href="blog-detail.html">
+                        <a href="blog-detail">
                           Spiral Stair, New Interior Design Trends 2020
                         </a>
                       </h4>
@@ -230,7 +230,7 @@ const Blog = () => {
                         nec accumsan nibh, eu grav da metus. Curabitur quis
                         sagittis nisl. In lectus ligula, varius quis...
                       </p>
-                      <a href="blog-detail.html" className="article">
+                      <a href="blog-detail" className="article">
                         full article{" "}
                         <span className="arrow icofont-rounded-right" />
                       </a>
@@ -253,7 +253,7 @@ const Blog = () => {
                         }}
                       />
                       <div className="image">
-                        <a href="blog-detail.html">
+                        <a href="blog-detail">
                           <img src="images/resource/news-8.jpg" alt="" />
                         </a>
                       </div>
@@ -267,7 +267,7 @@ const Blog = () => {
                         <li>others</li>
                       </ul>
                       <h4>
-                        <a href="blog-detail.html">Nordic Interior Style</a>
+                        <a href="blog-detail">Nordic Interior Style</a>
                       </h4>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -275,7 +275,7 @@ const Blog = () => {
                         nec accumsan nibh, eu grav da metus. Curabitur quis
                         sagittis nisl. In lectus ligula, varius quis...
                       </p>
-                      <a href="blog-detail.html" className="article">
+                      <a href="blog-detail" className="article">
                         full article{" "}
                         <span className="arrow icofont-rounded-right" />
                       </a>
@@ -297,7 +297,7 @@ const Blog = () => {
     <footer className="main-footer">
       <div className="auto-container">
         <div className="logo">
-          <a href="index.html">
+          <a href="index">
             <img src="images/logo-3.png" alt="" />
           </a>
         </div>

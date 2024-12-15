@@ -206,7 +206,7 @@ const ProjectDetails = () => {
     <footer className="main-footer">
       <div className="auto-container">
         <div className="logo">
-          <a href="index.html">
+          <a href="index">
             <img src="images/logo-3.png" alt="" />
           </a>
         </div>

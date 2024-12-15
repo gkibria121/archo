@@ -58,10 +58,10 @@ const BlogDetails = () => {
           {/* Page Breadcrumbs */}
           <ul className="page-breadcrumb">
             <li>
-              <a href="index.html">Home</a>
+              <a href="index">Home</a>
             </li>
             <li>
-              <a href="projects.html">Works</a>
+              <a href="projects">Works</a>
             </li>
             <li>Nordic Interior STyle</li>
           </ul>
@@ -171,7 +171,7 @@ const BlogDetails = () => {
             <div className="news-block style-two col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <div className="image">
-                  <a href="blog-detail.html">
+                  <a href="blog-detail">
                     <img src="images/resource/news-9.jpg" alt="" />
                   </a>
                 </div>
@@ -181,7 +181,7 @@ const BlogDetails = () => {
                     <li>news</li>
                   </ul>
                   <h4>
-                    <a href="blog-detail.html">The Way Of Building</a>
+                    <a href="blog-detail">The Way Of Building</a>
                   </h4>
                 </div>
               </div>
@@ -190,7 +190,7 @@ const BlogDetails = () => {
             <div className="news-block style-two col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <div className="image">
-                  <a href="blog-detail.html">
+                  <a href="blog-detail">
                     <img src="images/resource/news-10.jpg" alt="" />
                   </a>
                 </div>
@@ -200,7 +200,7 @@ const BlogDetails = () => {
                     <li>inspiration</li>
                   </ul>
                   <h4>
-                    <a href="blog-detail.html">
+                    <a href="blog-detail">
                       The Arch In Modern Architecture, Art &amp; Aesthetic More
                     </a>
                   </h4>
@@ -211,7 +211,7 @@ const BlogDetails = () => {
             <div className="news-block style-two col-lg-4 col-md-6 col-sm-12">
               <div className="inner-box">
                 <div className="image">
-                  <a href="blog-detail.html">
+                  <a href="blog-detail">
                     <img src="images/resource/news-11.jpg" alt="" />
                   </a>
                 </div>
@@ -221,7 +221,7 @@ const BlogDetails = () => {
                     <li>tips &amp; tricks</li>
                   </ul>
                   <h4>
-                    <a href="blog-detail.html">
+                    <a href="blog-detail">
                       Spiral Stair, New Interior Design Trends 2020
                     </a>
                   </h4>
@@ -261,7 +261,7 @@ const BlogDetails = () => {
               <h4>Leave A Comment</h4>
             </div>
             {/*Comment Form*/}
-            <form method="post" action="blog.html">
+            <form method="post" action="blog">
               <div className="row clearfix">
                 <div className="col-lg-6 col-md-6 col-sm-12 form-group">
                   <input
@@ -315,7 +315,7 @@ const BlogDetails = () => {
     <footer className="main-footer">
       <div className="auto-container">
         <div className="logo">
-          <a href="index.html">
+          <a href="index">
             <img src="images/logo-3.png" alt="" />
           </a>
         </div>
