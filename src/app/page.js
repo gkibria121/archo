@@ -10,13 +10,7 @@ import ProjectDetails from '@/components/ProjectDetails';
 const page = () => {
   return (
     <>
-      <Home />
-      <About />
-      <Contact />
-      <Blog />
-      <BlogDetails />
-      <Project />
-      <ProjectDetails />
+      <Home /> 
     </>
   );
 };

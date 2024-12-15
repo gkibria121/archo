@@ -13,9 +13,9 @@ const Contact = () => {
     <link rel="profile" href="https://gmpg.org/xfn/11" />
     <link rel="canonical" href="Replace_with_your_PAGE_URL" />
     {/* Stylesheets */}
-    <link href="/src/css/bootstrap.css" rel="stylesheet" />
-    <link href="/src/css/main.css" rel="stylesheet" />
-    <link href="/src/css/responsive.css" rel="stylesheet" />
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/main.css" rel="stylesheet" />
+    <link href="/css/responsive.css" rel="stylesheet" />
     {/* Open Graph (OG) meta tags are snippets of code that control how URLs are displayed when shared on social media
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content="website" />
@@ -339,6 +339,7 @@ const Contact = () => {
     </div>
     {/*Google Map APi Key*/}
     {/*End Google Map APi*/}
+    
   </>
   
   )
