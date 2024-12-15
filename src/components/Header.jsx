@@ -73,7 +73,7 @@ function Header() {
               <nav className="main-menu navbar-expand-md">
                 <ul className="navigation clearfix">
                   <li className="current">
-                    <Link href="">Home</Link>
+                    <Link href="/">Home</Link>
                   </li>
                   <li>
                     <Link href="about">About</Link>
