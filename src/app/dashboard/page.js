@@ -1,11 +1,11 @@
 'use client'
-import React from 'react';  
-import Project from '@/components/Project';
+import React from 'react'; 
+import Dashboard from '@/components/Dashboard';
 
 const page = ({children}) => {
   return (
     <>  
-      <Project /> 
+    <Dashboard/>
     </>
   );
 };
