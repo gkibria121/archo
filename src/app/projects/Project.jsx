@@ -1,7 +1,8 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import Header from './Header';
-import Footer from './Footer';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import ScrollToTopButton from '@/components/ScrollToTopButton';
 
 const Project = () => {
   const [projects, setProjects] = useState([]);
@@ -141,9 +142,7 @@ const Project = () => {
 
         <Footer/>
 
-        <div className="scroll-to-top scroll-to-target" data-target="html">
-          <span className="fa fa-arrow-circle-up" />
-        </div>
+        <ScrollToTopButton/>
       </div>
     </>
   );

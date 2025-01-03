@@ -1,5 +1,5 @@
 import React from 'react'; 
-import About from '@/components/About'; 
+import About from '@/app/about/About'; 
 
 const page = ({children}) => {
   return (

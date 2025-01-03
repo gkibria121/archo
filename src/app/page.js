@@ -1,10 +1,14 @@
 import React from 'react';
-import Home from '@/components/Home'; 
+import Home from '@/app/_home/Home';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const page = () => {
   return (
     <>
-      <Home /> 
+      <Header />
+      <Home />
+      <Footer />
     </>
   );
 };

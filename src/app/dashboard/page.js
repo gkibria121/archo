@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'; 
-import Dashboard from '@/components/Dashboard';
+import Dashboard from '@/app/dashboard/Dashboard';
 
 const page = ({children}) => {
   return (
