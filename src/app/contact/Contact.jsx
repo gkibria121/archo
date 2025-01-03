@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import ScrollToTopButton from '@/components/ScrollToTopButton';
 
 const Contact = () => {
   return (
@@ -124,14 +125,8 @@ const Contact = () => {
         {/* Main Footer */}
         <Footer />
         {/* End Main Footer */}
-      </div>
-      {/*End pagewrapper*/}
-      {/* Scroll To Top */}
-      <div className="scroll-to-top scroll-to-target" data-target="html">
-        <span className="fa fa-arrow-circle-up" />
-      </div>
-      {/*Google Map APi Key*/}
-      {/*End Google Map APi*/}
+      </div> 
+      <ScrollToTopButton/>
     </>
   );
 };

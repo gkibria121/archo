@@ -4,8 +4,9 @@ import Footer from '../../components/Footer'
 import Testimonial from '../_home/Testimonial'
 import Counter from '../_home/Counter'
 import Services from '../_home/Services'
-import Team from '../../components/Team'
+import Team from './Team'
 import Experience from '../_home/Experience'
+import ScrollToTopButton from '@/components/ScrollToTopButton'
 
 const About = () => {
   return (
@@ -29,9 +30,7 @@ const About = () => {
     <Testimonial/>
     <Footer/>
   </div>
-  <div className="scroll-to-top scroll-to-target" data-target="html">
-    <span className="fa fa-arrow-circle-up" />
-  </div>
+   <ScrollToTopButton/>
 </>
 
   )
