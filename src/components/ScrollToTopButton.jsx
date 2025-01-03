@@ -54,6 +54,7 @@ function ScrollToTopButton() {
     >
       <div
         className="scroll-to-top scroll-to-target"
+         data-testid="scroll-to-top"
         style={{ display: isVisible ? 'block' : 'none' }}
         onClick={scrollToTop}
       >
