@@ -1,7 +1,10 @@
+// components/Header.jsx
 "use client"
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { Logo } from '@/components/navigation/Logo'
+import { Navigation } from '@/components/navigation/Navigation';
+import { MobileMenu } from '@/components/navigation/MobileMenu';
 
 function Header() {
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
@@ -16,6 +19,7 @@ function Header() {
     const handleResize = () => {
       if (window.innerWidth > 768) {
         setIsMobileMenuVisible(false);
+        document.body.style.overflow = 'visible';
       }
     };
 
@@ -39,11 +43,7 @@ function Header() {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuVisible(!isMobileMenuVisible);
-    if (!isMobileMenuVisible) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'visible';
-    }
+    document.body.style.overflow = !isMobileMenuVisible ? 'hidden' : 'visible';
   };
 
   const closeMobileMenu = () => {
@@ -51,78 +51,39 @@ function Header() {
     document.body.style.overflow = 'visible';
   };
 
-  const menuItems = [
-    { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' },
-    { path: '/projects', label: 'Projects' },
-    { path: '/dashboard', label: 'Dashboard' },
-    { path: '/contact', label: 'Contact' }
-  ];
-
   return (
-    <header className={`main-header ${isHeaderFixed ? 'fixed-header' : ''} ${headerClass}`}>
+    <header 
+      className={`main-header ${isHeaderFixed ? 'fixed-header' : ''} ${headerClass}`}
+      data-testid="main-header"
+    >
       <div className="header-upper">
         <div className="outer-container">
           <div className="inner-container clearfix">
             <div className="pull-left logo-box">
-              <div className="logo">
-                <Link href="/">
-                  <img 
-                    src={headerClass === 'header-style-two' ? "/images/logo-2.png" : "/images/logo.png"} 
-                    alt="Logo" 
-                    title="Logo" 
-                  />
-                </Link>
-              </div>
+              <Logo variant={headerClass === 'header-style-two' ? 'dark' : 'default'} />
             </div>
 
             <div className="nav-outer pull-left clearfix">
-              <div 
+              <button 
                 className="mobile-nav-toggler" 
                 onClick={toggleMobileMenu}
                 aria-label="Toggle mobile menu"
+                data-testid="mobile-menu-toggle"
               >
                 <span className="icon ti-menu" />
-              </div>
+              </button>
 
-              <nav className="main-menu navbar-expand-md">
-                <ul className="navigation clearfix">
-                  {menuItems.map(item => (
-                    <li key={item.path} className={isActive(item.path)}>
-                      <Link href={item.path}>{item.label}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
+              <Navigation isActive={isActive} />
             </div>
           </div>
         </div>
       </div>
 
-      {isMobileMenuVisible && (
-        <div className="mobile-menu">
-          <div className="menu-backdrop" onClick={closeMobileMenu} />
-          <div className="close-btn" onClick={closeMobileMenu}>
-            <span className="icon lnr lnr-cross" />
-          </div>
-          <nav className="menu-box">
-            <div className="nav-logo">
-              <Link href="/" onClick={closeMobileMenu}>
-                <img src="/images/logo-2.png" alt="Logo" title="Logo" />
-              </Link>
-            </div>
-            <ul className="menu-outer">
-              {menuItems.map(item => (
-                <li key={item.path} className={isActive(item.path)}>
-                  <Link href={item.path} onClick={closeMobileMenu}>
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
-      )}
+      <MobileMenu 
+        isVisible={isMobileMenuVisible}
+        onClose={closeMobileMenu}
+        isActive={isActive}
+      />
     </header>
   );
 }
