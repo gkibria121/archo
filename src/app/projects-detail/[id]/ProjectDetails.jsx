@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Header from './Header';
+import Header from '@/components/Header';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import Footer from './Footer';
+import Footer from '@/components/Footer';
 import { X, ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react';
 
 const ImageBox = ({ image, onMaximize, alt }) => {

@@ -1,6 +1,6 @@
 
 import React from 'react';  
-import ProjectDetails from '@/components/ProjectDetails';
+import ProjectDetails from './ProjectDetails';
 
 const page = ({children}) => {
   return (

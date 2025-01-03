@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';  
-import Project from '@/components/Project';
+import Project from '@/app/projects/Project';
 
 const page = ({children}) => {
   return (
