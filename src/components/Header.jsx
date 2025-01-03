@@ -6,14 +6,14 @@ import { Logo } from '@/components/navigation/Logo'
 import { Navigation } from '@/components/navigation/Navigation';
 import { MobileMenu } from '@/components/navigation/MobileMenu';
 
-function Header() {
+function Header({isFixed}) {
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsHeaderFixed(window.scrollY > 100);
+      setIsHeaderFixed(window.scrollY > 100 || isFixed);
     };
 
     const handleResize = () => {
@@ -31,14 +31,15 @@ function Header() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
+  console.log(isFixed)
   const headerClass = pathname.includes('/projects') || pathname === '/contact'
     ? 'header-style-two'
     : 'header-style-one';
 
   const isActive = (route) => {
     if (route === '/') return pathname === '/' ? 'current' : '';
-    return pathname.includes(route) ? 'current' : '';
+     
+    return new RegExp(`^${route}`).test(pathname) ? 'current' : '';
   };
 
   const toggleMobileMenu = () => {
@@ -53,7 +54,7 @@ function Header() {
 
   return (
     <header 
-      className={`main-header ${isHeaderFixed ? 'fixed-header' : ''} ${headerClass}`}
+      className={`main-header ${isHeaderFixed || isFixed ? 'fixed-header' : ''} `}
       data-testid="main-header"
     >
       <div className="header-upper">

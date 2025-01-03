@@ -14,13 +14,13 @@ const Services = () => {
             <div className="service-block col-lg-3 col-md-6 col-sm-12">
               <div className="inner-box">
                 <h5>
-                  <a href="projects-detail">
+                  <a href="projects/">
                     profressional and dedicate team
                   </a>
                 </h5>
                 <p>Building architectures with modern technology.</p>
                 <div className="icon icofont-labour" />
-                <a href="projects-detail" className="more">
+                <a href="projects/" className="more">
                   more
                 </a>
               </div>
@@ -29,11 +29,11 @@ const Services = () => {
             <div className="service-block col-lg-3 col-md-6 col-sm-12">
               <div className="inner-box">
                 <h5>
-                  <a href="projects-detail">unique design</a>
+                  <a href="projects/">unique design</a>
                 </h5>
                 <p>Bring the beautifully for your house. Just enjoy!</p>
                 <div className="icon icofont-ruler-compass-alt" />
-                <a href="projects-detail" className="more">
+                <a href="projects/" className="more">
                   more
                 </a>
               </div>
@@ -42,11 +42,11 @@ const Services = () => {
             <div className="service-block col-lg-3 col-md-6 col-sm-12">
               <div className="inner-box">
                 <h5>
-                  <a href="projects-detail">affordable and flexiable</a>
+                  <a href="projects/">affordable and flexiable</a>
                 </h5>
                 <p>Bring nature in your house. Health is important</p>
                 <div className="icon icofont-credit-card" />
-                <a href="projects-detail" className="more">
+                <a href="projects/" className="more">
                   more
                 </a>
               </div>
@@ -55,11 +55,11 @@ const Services = () => {
             <div className="service-block col-lg-3 col-md-6 col-sm-12">
               <div className="inner-box">
                 <h5>
-                  <a href="projects-detail">24/7 support</a>
+                  <a href="projects/">24/7 support</a>
                 </h5>
                 <p>Consulting solutions and make plan to renovation</p>
                 <div className="icon icofont-live-support" />
-                <a href="projects-detail" className="more">
+                <a href="projects/" className="more">
                   more
                 </a>
               </div>

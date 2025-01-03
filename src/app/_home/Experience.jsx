@@ -46,7 +46,7 @@ const Experience = () => {
                     <div className="content">
                       <div className="icon icofont-building-alt" />
                       <h5>
-                        <a href="projects-detail">
+                        <a href="projects/">
                           Architectural Building
                         </a>
                       </h5>
@@ -63,7 +63,7 @@ const Experience = () => {
                     <div className="content">
                       <div className="icon icofont-livejournal" />
                       <h5>
-                        <a href="projects-detail">Interior Design</a>
+                        <a href="projects/">Interior Design</a>
                       </h5>
                       <p>
                         Meaningful preconstruction services bring value,
@@ -79,7 +79,7 @@ const Experience = () => {
                     <div className="content">
                       <div className="icon icofont-toy-horse" />
                       <h5>
-                        <a href="projects-detail">Furnitures Production</a>
+                        <a href="projects/">Furnitures Production</a>
                       </h5>
                       <p>
                         We developed strong relationships with contractors and

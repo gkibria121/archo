@@ -104,12 +104,12 @@ const ProjectDetails = () => {
     
     return (
       <div className="relative mt-8 mb-8">
-        <div className="image-box relative">
+        <div className="image-box relative  max-w-[75rem]  justify-center flex">
           <img 
             src={images[sectionImageIndex[section]]} 
             alt={`${section} ${sectionImageIndex[section] + 1}`}
             className="w-full object-cover rounded"
-            style={{ height: '600px' }}
+            style={{ height: '800px'   }}
           />
           
           <button
@@ -293,14 +293,14 @@ const ProjectDetails = () => {
             <div className="clearfix">
               <div className="pull-left">
                 {prevProject && (
-                  <Link href={`/projects-detail/${prevProject.id}`}>
+                  <Link href={`/projects//${prevProject.id}`}>
                     <span className="arrow icofont-rounded-left" /> {prevProject.title}
                   </Link>
                 )}
               </div>
               <div className="pull-right">
                 {nextProject && (
-                  <Link href={`/projects-detail/${nextProject.id}`}>
+                  <Link href={`/projects//${nextProject.id}`}>
                     {nextProject.title} <span className="arrow icofont-rounded-right" />
                   </Link>
                 )}

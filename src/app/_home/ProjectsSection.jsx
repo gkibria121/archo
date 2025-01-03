@@ -71,14 +71,14 @@ const DynamicProjectsSection = () => {
               <div key={project.id || index} className="gallery-block-two masonry-item col-lg-3 col-md-6 col-sm-12">
                 <div className="inner-box">
                   <div className="image">
-                    <a href={`projects-detail/${project.id}`}>
+                    <a href={`projects//${project.id}`}>
                       <img src={project.mainImageUrl || `images/gallery/${(index % 4) + 1}.jpg`} alt={project.title} />
                     </a>
                   </div>
                   <div className="lower-content">
                     <div className="designation">{project.type}</div>
                     <h4>
-                      <a href={`projects-detail/${project.id}`}>
+                      <a href={`projects//${project.id}`}>
                         {project.title}, {project.location}
                       </a>
                     </h4>
