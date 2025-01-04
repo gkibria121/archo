@@ -33,7 +33,7 @@ export const useProjectForm = (initialData) => {
         [field]: field === 'mainImage' ? base64Array[0] : [...(prev[field] || []), ...base64Array]
       }));
     } catch (error) {
-      console.log(error)
+ 
       setError("Failed to process image. Please try again.");
     }
   }, []);

@@ -22,7 +22,7 @@ const Dashboard = () => {
   };
 
   const handleEdit = (project) => {
-    router.push(`/dashboard/projects/add?id=${project.id}`);
+    router.push(`/dashboard/projects/edit?id=${project.id}`);
   };
 
   return (<>

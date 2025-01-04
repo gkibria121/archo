@@ -30,8 +30,7 @@ function Header({isFixed}) {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
-  console.log(isFixed)
+  }, []); 
   const headerClass = pathname.includes('/projects') || pathname === '/contact'
     ? 'header-style-two'
     : 'header-style-one';
