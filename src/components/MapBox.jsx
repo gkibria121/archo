@@ -1,7 +1,7 @@
 import React from "react";
 
 function MapBox({src,title}) {
-    
+    console.log(src);
   return <>{src && (
     <div className="map-section mt-8">
       <h3 className="text-2xl font-bold mb-4">{title}</h3>

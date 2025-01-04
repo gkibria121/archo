@@ -1,3 +1,5 @@
+import MapBox from "../MapBox";
+
 // components/ProjectForm/BasicInformation.js
 export const BasicInformation = ({
     formData,
@@ -29,15 +31,7 @@ export const BasicInformation = ({
           className="w-full p-2 border rounded"
           data-testid="location-input"
         />
-        {mapUrl && (
-          <iframe
-            src={mapUrl}
-            width="100%"
-            height="300"
-            frameBorder="0"
-            allowFullScreen
-          />
-        )}
+        <MapBox src={mapUrl} />
       </div>
     </div>
   );

@@ -3,8 +3,7 @@ import { useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useProjectForm } from "@/hooks/useProjectForm"; 
 import { BasicInformation } from "@/components/ProjectForm/BasicInformation";  
-import { ProjectDetailsSection } from "@/components/ProjectForm/ProjectDetailsSection";  
-import { QuoteSection } from "@/components/ProjectForm/QuoteSection";  
+import { ProjectDetailsSection } from "@/components/ProjectForm/ProjectDetailsSection";   
 import { ImageUploadSection } from "@/components/ProjectForm/ImageUploadSection";  
 import Header from "@/components/Header";
 
@@ -41,6 +40,7 @@ const AddProject = () => {
     handleImageUpload,
     setFormData,
     setError,
+    mapUrl,
     setIsSubmitting
   } = useProjectForm(initialFormState);
 
@@ -103,6 +103,8 @@ const AddProject = () => {
               formData={formData}
               onUpdate={(updates) => setFormData((prev) => ({ ...prev, ...updates }))}
               onLocationChange={handleLocationChange}
+              mapUrl={mapUrl}
+               
             />
 
             <ProjectDetailsSection
@@ -110,11 +112,7 @@ const AddProject = () => {
               onUpdate={(updates) => setFormData((prev) => ({ ...prev, ...updates }))}
             />
           </div>
-
-          <QuoteSection
-            formData={formData}
-            onUpdate={(updates) => setFormData((prev) => ({ ...prev, ...updates }))}
-          />
+ 
 
           <div className="mt-8">
             <h2 className="text-xl font-semibold">Project Images</h2>
