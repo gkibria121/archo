@@ -12,8 +12,7 @@ const About = () => {
   return (
     <> 
   <div className="page-wrapper">
-    <Header />
-    {/* Page Banner Section */}
+    <Header /> 
     <section
       className="page-banner-section"
       style={{ backgroundImage: "url(images/background/2.jpg)" }}
@@ -21,8 +20,7 @@ const About = () => {
       <div className="auto-container">
         <h1>archo</h1>
       </div>
-    </section>
-    {/* End Page Banner Section */}
+    </section> 
     <Experience/>
     <Team/>
     <Services/>

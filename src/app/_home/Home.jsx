@@ -8,8 +8,7 @@ import Services from './Services'
 import Counter from './Counter'
 import HowWeWork from './HowWeWork'
 import Testimonial from './Testimonial'
-import Sponsors from './Sponsors'
-import NewsSection from './NewsSection'
+import Sponsors from './Sponsors' 
 import ScrollToTopButton from '@/components/ScrollToTopButton'
 
 
@@ -26,8 +25,7 @@ const Home = () => {
     <Counter/>
     <HowWeWork/>
     <Testimonial/>
-    <Sponsors/>
-    <NewsSection/>
+    <Sponsors/> 
     
   </div>
   <ScrollToTopButton/>
