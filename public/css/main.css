@@ -3514,11 +3514,9 @@ img{
     position: relative;
     overflow: hidden;
     border-radius: 12px;  /* Soft edges */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Subtle depth */
-    height: 400px;  /* Adjust height to prevent it from being too tall */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Subtle depth */ 
+	object-fit: cover;
+	
 }
 
 .project-banner-section .image {

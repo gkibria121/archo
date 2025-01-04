@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Link from 'next/link';
 
 const Banner = () => {
   const slides = [
@@ -82,9 +83,9 @@ const Banner = () => {
                   <p className="text-white/90 text-lg md:text-xl mb-8 leading-relaxed">
                     {slide.description}
                   </p>
-                  <button className="px-8 py-3 bg-white text-gray-900 hover:bg-gray-100 transition-colors duration-200">
+                  <Link href={"/projects"} className="px-8 py-3 bg-white text-gray-900 hover:bg-gray-100 transition-colors duration-200">
                     See project
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
