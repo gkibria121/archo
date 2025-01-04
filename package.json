@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start", 
+    "start": "next start",
     "test": "jest",
     "test:watch": "jest --watch"
   },
@@ -14,6 +14,7 @@
     "lucide-react": "^0.469.0",
     "next": "15.1.0",
     "owl.carousel": "^2.3.4",
+    "punycode": "^2.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-owl-carousel": "^2.3.3"
