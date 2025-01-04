@@ -95,7 +95,7 @@ const ProjectDetails = () => {
           <div className="auto-container">
             <div className="inner-container">
               <ProjectInfo project={project} />
-
+            </div>
               <MapBox src={mapUrl}  title={"Project Location"}/>
 
               <ProjectSectionContainer
@@ -138,7 +138,7 @@ const ProjectDetails = () => {
                   setSectionImageIndex={setSectionImageIndex}
                 />
               </ProjectSectionContainer>
-            </div>
+            
           </div>
         </section>
 
