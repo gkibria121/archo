@@ -40,13 +40,14 @@ const Dashboard = () => {
             Add Project
           </button>
         </div>
-
-        <ProjectList
+        
+      {projects.length !== 0 ? (<ProjectList
           projects={projects}
           onView={(id) => router.push(`/projects/${id}`)}
           onEdit={handleEdit}
           onDelete={handleDelete}
-        />
+        />):"No projects found!"}
+        
       </div>
     </div>
     </>
