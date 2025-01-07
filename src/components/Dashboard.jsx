@@ -1,224 +1,37 @@
 'use client'
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useRouter } from 'next/navigation';
-import Header from './Header';
-
-const fileToBase64 = (file) => {
-  return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = () => resolve(reader.result);
-    reader.onerror = (error) => reject(error);
-  });
-};
+import { useProject } from '@/app/contexts/ProjectContext';
+import { ImageUploadSection } from './ImageUploadSection';
 
 const Dashboard = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [error, setError] = useState(null);
-  const [projects, setProjects] = useState([]);
-  const [showUploadForm, setShowUploadForm] = useState(false);
-  const [mapUrl, setMapUrl] = useState('');
-  const [formData, setFormData] = useState({
-    title: '',
-    description: '',
-    location: '',
-    client: '',
-    date: '',
-    type: '',
-    services: '',
-    concept: '',
-    challenge: '',
-    solution: '',
-    quote: '',
-    quoteAuthor: '',
-    quotePosition: '',
-    mainImage: null,
-    conceptImages: [],
-    challengeImages: [],
-    solutionImages: [],
-  });
-  
   const router = useRouter();
-
-  useEffect(() => {
-    const storedProjects = sessionStorage.getItem('projects');
-    if (storedProjects) {
-      setProjects(JSON.parse(storedProjects));
-    }
-  }, []);
-
-  const handleLocationChange = (e) => {
-    const location = e.target.value;
-    setFormData({ ...formData, location });
-    if (location) {
-      const encodedLocation = encodeURIComponent(location);
-      setMapUrl(`https://www.google.com/maps/embed/v1/place?key=AIzaSyBG_KpmlY_ldrkT1d32Y74Q3i5eQgocNJI&q=${encodedLocation}`);
-    }
-  };
-
-  const handleImageUpload = async (e, field) => {
-    try {
-      const files = Array.from(e.target.files);
-      const base64Array = await Promise.all(files.map(file => fileToBase64(file)));
-      
-      if (field === 'mainImage') {
-        setFormData({ ...formData, [field]: base64Array[0] });
-      } else {
-        setFormData(prev => ({
-          ...prev,
-          [field]: [...(prev[field] || []), ...base64Array]
-        }));
-      }
-    } catch (error) {
-      console.error('Error converting image:', error);
-      setError('Failed to process image. Please try again.');
-    }
-  };
-
-  const removeImage = (field, index) => {
-    setFormData(prev => ({
-      ...prev,
-      [field]: prev[field].filter((_, i) => i !== index)
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setError(null);
-
-    try {
-      const newProject = {
-        ...formData,
-        id: formData.id || Date.now().toString(),
-        category: formData.type.toLowerCase(),
-        mainImageUrl: formData.mainImage,
-      };
-
-      let updatedProjects;
-      if (formData.id) {
-        updatedProjects = projects.map(p => 
-          p.id === formData.id ? newProject : p
-        );
-      } else {
-        updatedProjects = [...projects, newProject];
-      }
-
-      setProjects(updatedProjects);
-      sessionStorage.setItem('projects', JSON.stringify(updatedProjects));
-      setShowUploadForm(false);
-      resetForm();
-      
-    } catch (error) {
-      setError('Failed to save project. Please try again.');
-      console.error('Error saving project:', error);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  const resetForm = () => {
-    setFormData({
-      title: '',
-      description: '',
-      location: '',
-      client: '',
-      date: '',
-      type: '',
-      services: '',
-      concept: '',
-      challenge: '',
-      solution: '',
-      quote: '',
-      quoteAuthor: '',
-      quotePosition: '',
-      mainImage: null,
-      conceptImages: [],
-      challengeImages: [],
-      solutionImages: [],
-    });
-    setMapUrl('');
-  };
-
-  const handleDelete = (projectId) => {
-    try {
-      const updatedProjects = projects.filter(project => project.id !== projectId);
-      setProjects(updatedProjects);
-      sessionStorage.setItem('projects', JSON.stringify(updatedProjects));
-    } catch (error) {
-      setError('Failed to delete project. Please try again.');
-    }
-  };
-
-  const handleEdit = (project) => {
-    setFormData({
-      ...project,
-      conceptImages: project.conceptImages || [],
-      challengeImages: project.challengeImages || [],
-      solutionImages: project.solutionImages || [],
-    });
-    setShowUploadForm(true);
-    if (project.location) {
-      const encodedLocation = encodeURIComponent(project.location);
-      setMapUrl(`https://www.google.com/maps/embed/v1/place?key=AIzaSyBG_KpmlY_ldrkT1d32Y74Q3i5eQgocNJI&q=${encodedLocation}`);
-    }
-    window.scrollTo(0, 0);
-  };
+  const {
+    isSubmitting,
+    error,
+    projects,
+    showUploadForm,
+    mapUrl,
+    formData,
+    setFormData,
+    setShowUploadForm,
+    handleLocationChange,
+    handleImageUpload,
+    handleSubmit,
+    handleDelete,
+    handleEdit,
+    resetForm
+  } = useProject();
 
   const handleView = (projectId) => {
     router.push(`/projects-detail/${projectId}`);
   };
 
-  const ImageUploadSection = ({ title, field, images }) => (
-    <div className="mb-6">
-      <label className="block text-sm font-medium mb-2">{title}</label>
-      <input
-        type="file"
-        multiple
-        onChange={(e) => handleImageUpload(e, field)}
-        className="w-full mb-2"
-        accept="image/*"
-      />
-      <div className="grid grid-cols-4 gap-2">
-        {images && images.map((img, index) => (
-          <div key={index} className="relative">
-            <img
-              src={img}
-              alt={`${field} ${index + 1}`}
-              className="w-full h-24 object-cover rounded"
-            />
-            <button
-              type="button"
-              onClick={() => removeImage(field, index)}
-              className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center"
-            >
-              ×
-            </button>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-
   return (
-    <>
-    <meta charSet="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="profile" href="https://gmpg.org/xfn/11" />
-    <link href="/css/bootstrap.css" rel="stylesheet" />
-    <link href="/css/main.css" rel="stylesheet" />
-    <link href="/css/responsive.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Teko:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-
     <div className="page-wrapper">
-      {/* <Header/> */}
-    <div className="p-6">
-    </div>
+      <div className="p-6">
+      </div>
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-bold">Project Management Dashboard</h1>
@@ -269,7 +82,7 @@ const Dashboard = () => {
                   <input
                     type="text"
                     value={formData.location}
-                    onChange={handleLocationChange}
+                    onChange={(e) => handleLocationChange(e.target.value)}
                     className="w-full p-2 border rounded"
                     placeholder="Enter location"
                   />
@@ -418,7 +231,7 @@ const Dashboard = () => {
                 <label className="block text-sm font-medium mb-2">Main Banner Image</label>
                 <input
                   type="file"
-                  onChange={(e) => handleImageUpload(e, 'mainImage')}
+                  onChange={(e) => handleImageUpload([e.target.files[0]], 'mainImage')}
                   className="w-full mb-2"
                   accept="image/*"
                 />
@@ -437,7 +250,7 @@ const Dashboard = () => {
                 images={formData.conceptImages}
               />
 
-<ImageUploadSection 
+              <ImageUploadSection 
                 title="Challenge Images" 
                 field="challengeImages" 
                 images={formData.challengeImages}
@@ -507,7 +320,6 @@ const Dashboard = () => {
         )}
       </div>
     </div>
-    </>
   );
 };
 
