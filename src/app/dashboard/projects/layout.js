@@ -1,13 +1,19 @@
+// src/app/dashboard/layout.js
+"use client";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import React from "react";
 
-function layout({children}) {
-  return <>
-  <Header isFixed={true} />
-  {children}
-  <Footer /></>;
-  
+function DashboardLayout({ children }) {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Header isFixed={true} />
+      <main className="flex-grow">
+        {children}
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
-export default layout;
+export default DashboardLayout;

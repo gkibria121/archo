@@ -1,14 +1,15 @@
-'use client'
+'use client';
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const DynamicProjectsSection = () => {
   const [projects, setProjects] = useState([]);
   const [currentFilter, setCurrentFilter] = useState('all');
 
   useEffect(() => {
-    const storedProjects = sessionStorage.getItem('projects');
+    const storedProjects = localStorage.getItem('projects');
     if (storedProjects) {
-      setProjects(JSON.parse(storedProjects));
+      setProjects(JSON.parse(storedProjects).slice(0, 4));
     }
   }, []);
 
@@ -33,54 +34,33 @@ const DynamicProjectsSection = () => {
           
           <div className="filters">
             <ul className="filter-tabs filter-btns clearfix">
-              <li
-                className={`filter ${currentFilter === 'all' ? 'active' : ''}`}
-                onClick={() => filterProjects('all')}
-              >
-                all
-              </li>
-              <li
-                className={`filter ${currentFilter === 'residential' ? 'active' : ''}`}
-                onClick={() => filterProjects('residential')}
-              >
-                residentials
-              </li>
-              <li
-                className={`filter ${currentFilter === 'commercial' ? 'active' : ''}`}
-                onClick={() => filterProjects('commercial')}
-              >
-                commercials
-              </li>
-              <li
-                className={`filter ${currentFilter === 'architecture' ? 'active' : ''}`}
-                onClick={() => filterProjects('architecture')}
-              >
-                architecture
-              </li>
-              <li
-                className={`filter ${currentFilter === 'interior' ? 'active' : ''}`}
-                onClick={() => filterProjects('interior')}
-              >
-                interior
-              </li>
+              {['all', 'residential', 'commercial', 'architecture', 'interior'].map(category => (
+                <li
+                  key={category}
+                  className={`filter ${currentFilter === category ? 'active' : ''}`}
+                  onClick={() => filterProjects(category)}
+                >
+                  {category}
+                </li>
+              ))}
             </ul>
           </div>
 
           <div className="items-container row clearfix">
-            {getFilteredProjects().map((project, index) => (
-              <div key={project.id || index} className="gallery-block-two masonry-item col-lg-3 col-md-6 col-sm-12">
+            {getFilteredProjects().map((project) => (
+              <div key={project.id} className={`gallery-block-two all masonry-item ${project.category} col-lg-3 col-md-6 col-sm-12`}>
                 <div className="inner-box">
                   <div className="image">
-                    <a href={`projects//${project.id}`}>
-                      <img src={project.mainImageUrl || `images/gallery/${(index % 4) + 1}.jpg`} alt={project.title} />
-                    </a>
+                    <Link href={`/projects/${project.id}`}>
+                      <img src={project.mainImage} alt={project.title} />
+                    </Link>
                   </div>
                   <div className="lower-content">
-                    <div className="designation">{project.type}</div>
+                    <div className="designation">{project.category}</div>
                     <h4>
-                      <a href={`projects//${project.id}`}>
+                      <Link href={`/projects/${project.id}`}>
                         {project.title}, {project.location}
-                      </a>
+                      </Link>
                     </h4>
                   </div>
                 </div>
@@ -89,7 +69,7 @@ const DynamicProjectsSection = () => {
           </div>
 
           <div className="load-more text-center">
-            <a href="projects">See All Projects</a>
+            <Link href="/projects">See All Projects</Link>
           </div>
         </div>
       </div>
